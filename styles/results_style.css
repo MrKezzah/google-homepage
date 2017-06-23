@@ -6,6 +6,10 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+  margin: auto;
+}
+
 a{
   font-style: normal;
   color: #3b3b3b;
@@ -17,25 +21,52 @@ a:hover{
 }
 
 .head{
-    float: right;
-    margin-top: 12px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 0.75rem;
+  padding-bottom: 46px;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #e4e4e4;
 }
 
-.head a, head2 a{
+.head a{
   font-size: 13px;
   padding-left: 10px;
 }
 
-.head a:hover, head2 a:hover{
+.head a:hover{
   opacity: 0.85;
 }
 
-.head2{
+.right_head{
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+}
+
+.left_head{
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+}
+
+.left_head img {
+  vertical-align: middle;
   margin: auto;
-    float: right;
-    margin-top: 12px;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #e4e4e4;
+  padding: auto;
+  display: inline-block;
+  max-height: 42px;
+}
+
+.bottom_head{
+  position: absolute;
+  left: 132px;
+  padding-top: 50px;
+  display: inline-block;
 }
 
 #menu_button{
@@ -79,29 +110,23 @@ a:hover{
   padding: 10px
 }
 
-.main img{
-  display: block;
-  margin: auto;
-  width: auto;
-}
-
 .search{
+  vertical-align: middle;
+  display: inline-block;
   width: 500px;
   line-height: 32px;
-  height: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 6px 10px;
+  padding: 3px 5px;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
   box-shadow: 2px 3px 2px #f2f2f2;
+  background-color: white;
 }
 
 #voiceButton{
   margin: auto;
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
   float: right;
   display: inline-block;
   max-height: 22px;
